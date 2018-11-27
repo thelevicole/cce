@@ -36,6 +36,7 @@ $('.cursor-item').cursorElement();
 
 ## Options
 The plugin also accepts the following options
+
 |Name|Default|Description|
 |--|--|--|
 |offset_x|`0`|Offset the element horizontally by *nth* number of pixels|
