@@ -43,6 +43,15 @@ The plugin also accepts the following options
 |offset_y|`0`|Offset the element vertically by *nth* number of pixels|
 |preserve_cursor|`false`|When set to `true`, show the browsers default cursor with the custom element.|
 
+**Options example**
+```javascript
+$('.cursor-item').cursorElement({
+    offset_x: 10,
+    offset_y: 10,
+    preserve_cursor: true
+});
+```
+
 ## Advanced styling
 
 **Mouse over element with ID `#element-1`**
