@@ -39,8 +39,8 @@
 
 		const move = () => {
 			// Convert cursor position into percentage
-			const x_percent = (mouse_x + options.offset_x) / window_x * 100;
-			const y_percent = (mouse_y + options.offset_y) / window_y * 100;
+			const x_percent = (mouse_x + options.offsetX) / window_x * 100;
+			const y_percent = (mouse_y + options.offsetY) / window_y * 100;
 
 			$cursor.show().css({
 				top: y_percent + '%',
