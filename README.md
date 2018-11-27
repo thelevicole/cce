@@ -8,7 +8,7 @@ This plugin was originally created to meet the needs of a client job I was worki
 
 **1.** Include the plugin via jsDelivr CDN
 ```html
-<script src=“https://cdn.jsdelivr.net/gh/thelevicole/cce/dist/cce.min.js”></script>
+<script src=“https://cdn.jsdelivr.net/gh/thelevicole/cce/dist/cce.js”></script>
 ```
 
 **2.** Create a DOM element
@@ -19,13 +19,13 @@ This plugin was originally created to meet the needs of a client job I was worki
 **3.** Give it some styles
 ```css
 .cursor-item {
-	width: 40px;
-	height: 40px;
-	background: rgba(0, 0, 0, 0.7);
-	border-radius: 50%;
-	border-top-left-radius: 0;
-	border: 2px solid #fff;
-	box-shadow: 2px 4px 15px -5px #000;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border: 2px solid #fff;
+    box-shadow: 2px 4px 15px -5px #000;
 }
 ```
 
