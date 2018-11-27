@@ -39,16 +39,16 @@ The plugin also accepts the following options
 
 |Name|Default|Description|
 |--|--|--|
-|offset_x|`0`|Offset the element horizontally by *nth* number of pixels|
-|offset_y|`0`|Offset the element vertically by *nth* number of pixels|
-|preserve_cursor|`false`|When set to `true`, show the browsers default cursor with the custom element.|
+|offsetX|`0`|Offset the element horizontally by *nth* number of pixels|
+|offsetY|`0`|Offset the element vertically by *nth* number of pixels|
+|preserveCursor|`false`|When set to `true`, show the browsers default cursor with the custom element.|
 
 **Options example**
 ```javascript
 $('.cursor-item').cursorElement({
-    offset_x: 10,
-    offset_y: 10,
-    preserve_cursor: true
+    offsetX: 10,
+    offsetY: 10,
+    preserveCursor: true
 });
 ```
 
