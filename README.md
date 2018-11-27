@@ -8,7 +8,7 @@ This plugin was originally created to meet the needs of a client job I was worki
 
 **1.** Include the plugin via jsDelivr CDN
 ```html
-<script src=“https://cdn.jsdelivr.net/gh/thelevicole/cce/dist/cce.js”></script>
+<script src=“https://cdn.jsdelivr.net/gh/thelevicole/cce@1.0.0/dist/cce.js”></script>
 ```
 
 **2.** Create a DOM element

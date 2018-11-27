@@ -1,5 +1,5 @@
 /**
- * Simple element cursor plugin v0.0.3
+ * Simple element cursor plugin v1.0.0
  * 
  * Copyright (c) 2018 Levi Cole <me@thelevicole.com>
  * Licensed under MIT (http://opensource.org/licenses/MIT)
