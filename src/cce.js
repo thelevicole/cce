@@ -1,5 +1,5 @@
 /**
- * Simple element cursor plugin v1.1.1
+ * Simple element cursor plugin v1.1.2
  * 
  * Copyright (c) 2018 Levi Cole <me@thelevicole.com>
  * Licensed under MIT (http://opensource.org/licenses/MIT)
@@ -57,13 +57,13 @@
 		});
 
 		// Hide element if cursor leaves the document
-		$(document).on('mouseleave', function() {
-			visible = false;
+		$(document).on('mouseleave mouseenter', function() {
+			visible = event.type === 'mouseenter'; // Show when the mouse re-enters the page
 		});
 
 		// Hide element if cursor enters an iframe
-		$('iframe').on('mouseenter', function() {
-			visible = false;
+		$('iframe').on('mouseenter mouseleave', function(event) {
+			visible = event.type === 'mouseleave'; // Show when mouse leaves an iFrame
 		});
 
 		// Add click event to element
