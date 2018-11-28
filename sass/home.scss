@@ -1,0 +1,107 @@
+$light: #68D8FF;
+$dark: #37B0FF;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+
+body {
+	background: #fff;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #222;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/**
+ * Typography
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+	background: $dark;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: $dark;
+	color: #fff;
+}
+
+pre {
+	max-width: 100%;
+	display: inline-block;
+	background: rgba($light, .12);
+	border-radius: 0.1875rem;
+	padding: 5px 15px;
+	font-size: 0.875rem;
+	color: #4B4B4B;
+	text-align: left;
+	overflow-x: auto;
+}
+
+/**
+ * Page section defaults
+ */
+section { margin: 70px 0; }
+
+/**
+ * Page banner
+ */
+section.banner {
+	position: relative;
+	display: flex;
+	min-height: 500px;
+	margin: 0;
+	background-image: linear-gradient(-115deg, #68D8FF 0%, #37B0FF 100%);
+	color: #fff;
+	text-shadow: 0 12px 16px #38B0FF;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		background-image: url('../images/banner-bg.png');
+		background-size: cover;
+	}
+
+	h1 {
+		font-size: 2.5625rem;
+		letter-spacing: 0.179375rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: 1.125rem;
+		letter-spacing: 0.07875rem;
+	}
+}
+
+/**
+ * Advanced styling
+ */
+section.advanced-styling {
+
+	.example-action {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 15px 5px;
+		background: #f0f0f0;
+		border: 1px dashed #333;
+		border-radius: 5px;
+		user-select: none;
+	}
+
+}
+
+
+
+
+
+
+
+
