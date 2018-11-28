@@ -1,5 +1,5 @@
 /**
- * Simple element cursor plugin v1.1.0
+ * Simple element cursor plugin v1.1.1
  * 
  * Copyright (c) 2018 Levi Cole <me@thelevicole.com>
  * Licensed under MIT (http://opensource.org/licenses/MIT)
@@ -40,6 +40,8 @@
 		let id		= '',
 			node	= '';
 
+		let visible	= true;
+
 		// Update global variables on document events
 		$(document).on('ready mousemove resize', function(event) {
 			const $target = $(event.target);
@@ -56,12 +58,12 @@
 
 		// Hide element if cursor leaves the document
 		$(document).on('mouseleave', function() {
-			$cursor.hide();
+			visible = false;
 		});
 
 		// Hide element if cursor enters an iframe
 		$('iframe').on('mouseenter', function() {
-			$cursor.hide();
+			visible = false;
 		});
 
 		// Add click event to element
@@ -85,7 +87,13 @@
 			const x_percent = (mouse_x + options.offsetX) / window_x * 100;
 			const y_percent = (mouse_y + options.offsetY) / window_y * 100;
 
-			$cursor.show().css({
+			if (visible) {
+				$cursor.show();
+			} else {
+				$cursor.hide();
+			}
+
+			$cursor.css({
 				top: y_percent + '%',
 				left: x_percent + '%'
 			});
